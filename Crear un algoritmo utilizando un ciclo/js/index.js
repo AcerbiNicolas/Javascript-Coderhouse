@@ -1,5 +1,4 @@
-
-let resultado;
+let resultado = 0;
 let numPedido = parseInt(prompt("Ingrese un numero mayor a 0"));
 
 console.log(numPedido + " " + typeof(numPedido))
