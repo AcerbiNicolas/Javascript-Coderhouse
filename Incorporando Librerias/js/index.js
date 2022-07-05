@@ -17,19 +17,36 @@ function cargaDatos(){
     let msjError = document.getElementById("errorValida");
 
     if (userNameV == "") {
-        msjError.innerHTML = "Ingrese usuario";
+        Swal.fire({
+            title: 'Error',
+            text: 'Ingrese usuario',
+            icon: 'error',
+            showConfirmButton: false,
+            timer:2000
+        })
     }else if (contraV == "") {
-        msjError.innerHTML = "Ingrese su contraseña";
+        Swal.fire({
+            title: 'Error',
+            text: 'Ingrese su contraseña',
+            icon: 'error',
+            showConfirmButton: false,
+            timer:2000
+        })
     }else if (validaContraV == "") {
-        msjError.innerHTML = "Ingrese la confirmacion de su contraseña";
-        console.log("Ingrese la validacion de su contraseña")
+        Swal.fire({
+            title: 'Error',
+            text: 'Ingrese la confirmacion de su contraseña',
+            icon: 'error',
+            showConfirmButton: false,
+            timer:2000
+        })
     }else if (contraV != validaContraV) {
         Swal.fire({
             title: 'Error',
             text: 'Las contraseñas no coinciden',
             icon: 'error',
             showConfirmButton: false,
-            timer:1500
+            timer:2000
         })
     }else{
         Swal.fire({
